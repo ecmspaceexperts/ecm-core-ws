@@ -1,0 +1,22 @@
+<div>
+  <table valign="top" width="100%">
+    <tr>
+      <td>
+        Select Region Name:
+        <select #regionname placeholder = "Region Name" type="text">
+          <option value="">----Select----</option>
+          <option value="Asia">Asia</option>
+          <option value="European Union">European Union</option>
+          <option value="United States">United States</option>
+        </select>
+        <br/>
+        Enter Node Name: <input #nodename placeholder = "Node Name" type="text">
+        <br/>
+        <input type = "button" value = "submit" (click)="submitNodeName(regionname.value,nodename.value)">
+        <br>
+        <br> <a href="listnode">Go to Node List</a>
+      </td>
+    </tr>
+  </table>
+</div>
+

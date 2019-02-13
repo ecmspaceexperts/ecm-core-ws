@@ -1,0 +1,20 @@
+<div>
+  <table width="100%">
+    <tr>
+      <td align="right"><i class="fas fa-plus"></i><a href="createnode" style="font-family: Trebuchet MS, Arial, Helvetica, sans-serif;font-size: 12px;">&nbsp;Add New Folder</a></td>
+      <td align="right" width="18%"><i class="fas fa-upload"></i><a href="createnode" style="font-family: Trebuchet MS, Arial, Helvetica, sans-serif;font-size: 12px;">&nbsp;Upload Document</a></td>
+    </tr>
+  </table>
+  <table id="customers">
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Size</th>
+    </tr>
+    <tr *ngFor="let d of data">
+      <td>{{ d.name }}</td>
+      <td>{{ d.contentType }}</td>
+      <td>{{ d.size }} KB</td>
+    </tr>
+  </table>
+</div>
